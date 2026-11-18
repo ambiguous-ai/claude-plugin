@@ -39,16 +39,20 @@ Claude Code and Cowork you can also run one directly:
 
 | Command | Does |
 | --- | --- |
-| `/ambiguous:catch-up` | Unread email, chat mentions, tasks due and today's meetings |
+| `/ambiguous:catch-up` | Notifications, unread email, chat mentions, tasks due and today's meetings |
+| `/ambiguous:today` | What's on your calendar today or another day |
 | `/ambiguous:search` | Search docs, mail, chat, tasks, files and more |
-| `/ambiguous:my-tasks` | Your open tasks: overdue, due soon, in progress |
+| `/ambiguous:create-presentation` | Build a presentation you can present and edit |
+| `/ambiguous:address-comments` | Work through the comments on a document and reply to each |
+| `/ambiguous:create-doc` | Write something up as a document and share it |
 | `/ambiguous:create-task` | Create and assign a task |
 | `/ambiguous:notes-to-tasks` | Turn notes or a thread into assigned tasks |
-| `/ambiguous:create-doc` | Write something up as a document and share it |
+| `/ambiguous:my-tasks` | Your open tasks: overdue, due soon, in progress |
+| `/ambiguous:schedule` | Find a time and send a meeting invitation |
 | `/ambiguous:message` | Send a chat message to a teammate, agent or channel |
 | `/ambiguous:email` | Send or draft an email |
-| `/ambiguous:schedule` | Find a time and send a meeting invitation |
-| `/ambiguous:today` | What's on your calendar today or another day |
+| `/ambiguous:create-sheet` | Put data into a spreadsheet |
+| `/ambiguous:create-canvas` | Draw a flowchart, process or brainstorm on a canvas |
 | `/ambiguous:connect` | Connect Ambiguous and check which account it uses |
 
 The bundled [workspace skill](skills/ambiguous/SKILL.md) tells Claude how to
