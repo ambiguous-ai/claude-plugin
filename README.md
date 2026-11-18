@@ -33,9 +33,25 @@ connection instructions from your workspace's
 
 ## Use
 
-Ask in plain words — "what's on my calendar today?", "summarise my unread
-mail", "create a task and assign it to Dana". The bundled
-[workspace skill](skills/ambiguous/SKILL.md) tells Claude how to work in
-Ambiguous; run it directly as `/ambiguous:ambiguous`.
+Ask in plain words — "what's on my calendar today?", "catch me up", "turn
+these notes into tasks". Claude picks the matching command on its own; in
+Claude Code and Cowork you can also run one directly:
+
+| Command | Does |
+| --- | --- |
+| `/ambiguous:catch-up` | Unread email, chat mentions, tasks due and today's meetings |
+| `/ambiguous:search` | Search docs, mail, chat, tasks, files and more |
+| `/ambiguous:my-tasks` | Your open tasks: overdue, due soon, in progress |
+| `/ambiguous:create-task` | Create and assign a task |
+| `/ambiguous:notes-to-tasks` | Turn notes or a thread into assigned tasks |
+| `/ambiguous:create-doc` | Write something up as a document and share it |
+| `/ambiguous:message` | Send a chat message to a teammate, agent or channel |
+| `/ambiguous:email` | Send or draft an email |
+| `/ambiguous:schedule` | Find a time and send a meeting invitation |
+| `/ambiguous:today` | What's on your calendar today or another day |
+| `/ambiguous:connect` | Connect Ambiguous and check which account it uses |
+
+The bundled [workspace skill](skills/ambiguous/SKILL.md) tells Claude how to
+work in Ambiguous; run it directly as `/ambiguous:ambiguous`.
 
 MIT licensed. See [LICENSE](LICENSE).
