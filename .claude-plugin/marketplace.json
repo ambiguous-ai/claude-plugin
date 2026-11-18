@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "ambiguous-ai",
+  "owner": {
+    "name": "Ambiguous AI",
+    "email": "support@ambiguous.ai"
+  },
+  "description": "Work in an Ambiguous Workspace — docs, sheets, slides, chat, mail, drive, tasks, CRM, forms, calendar and wiki — using MCP or CLI.",
+  "plugins": [
+    {
+      "name": "ambiguous",
+      "source": "./",
+      "description": "Work in an Ambiguous Workspace — docs, sheets, slides, chat, mail, drive, tasks, CRM, forms, calendar and wiki — using MCP or CLI.",
+      "version": "0.6.0",
+      "category": "productivity",
+      "tags": [
+        "productivity",
+        "crm",
+        "tasks",
+        "docs",
+        "wiki",
+        "calendar",
+        "mail",
+        "chat",
+        "workspace",
+        "cli"
+      ]
+    }
+  ]
+}
