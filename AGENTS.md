@@ -9,14 +9,17 @@ Each kind of guidance has one source:
 
 | Owns | Source |
 | --- | --- |
-| Agent operating instructions | https://www.ambiguous.ai/skill.md, copied to `skills/ambiguous/SKILL.md` by `./scripts/sync-skill.sh` |
+| Agent operating instructions | https://www.ambiguous.ai/skill.md, copied unchanged to `skills/ambiguous/SKILL.md` |
 | Plugin metadata | `.claude-plugin/plugin.json` |
 | Marketplace listing | `.claude-plugin/marketplace.json` |
 | MCP connection (the Anthropic directory endpoint) | `.mcp.json` |
 | Installation and connection setup | `README.md` |
 | Repository maintenance | This file |
 
-Edit the operating guide in the workspace repository, never here; the sync copies it unchanged.
+Edit the operating guide in the workspace repository, never here, then refresh the copy:
+`curl -fsSL https://www.ambiguous.ai/skill.md -o skills/ambiguous/SKILL.md`. The repository holds no
+scripts: Anthropic's directory accepts scripts only from Verified organizations, so a script at the
+plugin root blocks submission.
 Skills written for Claude Code alone live under `skills/` beside it and may use any Claude Code
 skill field. Commands live in `commands/`, one file each. In claude.ai chat a command loads as a
 skill that Claude applies when its description fits, so write each description as the request a
@@ -34,7 +37,7 @@ under that name.
 ## Checks before opening a PR
 
 ```bash
-./scripts/sync-skill.sh --check
+curl -fsSL https://www.ambiguous.ai/skill.md | cmp - skills/ambiguous/SKILL.md
 claude plugin validate --strict .
 git diff --check
 ```
