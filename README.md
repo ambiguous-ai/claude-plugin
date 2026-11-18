@@ -1,41 +1,33 @@
-# Ambiguous for Claude Code
+# Ambiguous Plugin for Claude
 
-Work in your [Ambiguous](https://www.ambiguous.ai) workspace from Claude Code.
-Ambiguous is the workspace built for human-AI collaboration: docs, sheets,
-slides, chat, mail, drive, tasks, CRM, forms, calendar and wiki. This plugin
-lets Claude read and change them on your behalf, with your account's
-permissions.
+Work in your [Ambiguous](https://www.ambiguous.ai) workspace from Claude. Ambiguous is the
+workspace built for human-AI collaboration: docs, sheets, slides, canvas, chat, mail, drive, tasks,
+CRM, forms, calendar and wiki. Ambiguous Workspace is free for up to 5 teammates.
 
-Ambiguous Workspace is free for up to 5 teammates.
+This plugin bundles:
 
-## Install
+- The **Ambiguous MCP server**, so Claude can search, read, create and update your workspace with
+  your account's permissions
+- The **Ambiguous skill**, which teaches Claude how to work in Ambiguous
+- **Commands** for the work people ask for most: catching up, finding things, presentations, docs,
+  sheets, canvases, tasks, messages, email and meetings
 
-```bash
-claude plugin marketplace add ambiguous-ai/claude-plugin
-claude plugin install ambiguous@ambiguous-ai
+## MCP server
+
+Claude connects to Ambiguous's hosted MCP server at:
+
+```
+https://app.ambiguous.ai/mcp/anthropic
 ```
 
-In a running session, run `/reload-plugins`.
+The first time Claude uses it, you sign in to Ambiguous in your browser (OAuth). The plugin runs no
+local code and connects to nothing else.
 
-If you added the `ambiguous-ai/plugins` marketplace before, you already have
-this plugin: that marketplace now installs it from here, so there is nothing
-to add.
+## Commands
 
-Plugins for Codex, Cursor and Grok Bot live in
-[ambiguous-ai/plugins](https://github.com/ambiguous-ai/plugins).
-
-## Set up
-
-The plugin bundles the Ambiguous MCP connector. The first time Claude uses it,
-sign in to Ambiguous in your browser. To use the `ambiguous` CLI instead, get
-connection instructions from your workspace's
-[Settings → Connect](https://app.ambiguous.ai/settings/connect).
-
-## Use
-
-Ask in plain words — "what's on my calendar today?", "catch me up", "turn
-these notes into tasks". Claude picks the matching command on its own; in
-Claude Code and Cowork you can also run one directly:
+Ask in plain words, such as "what did I miss?", "make a presentation about Q1" or "turn these notes
+into tasks", and Claude picks the matching command. In Claude Code and Cowork you can also run one
+directly:
 
 | Command | Does |
 | --- | --- |
@@ -55,7 +47,16 @@ Claude Code and Cowork you can also run one directly:
 | `/ambiguous:create-canvas` | Draw a flowchart, process or brainstorm on a canvas |
 | `/ambiguous:connect` | Connect Ambiguous and check which account it uses |
 
-The bundled [workspace skill](skills/ambiguous/SKILL.md) tells Claude how to
-work in Ambiguous; run it directly as `/ambiguous:ambiguous`.
+## Install in Claude Code
 
-MIT licensed. See [LICENSE](LICENSE).
+```bash
+claude plugin marketplace add ambiguous-ai/claude-plugin
+claude plugin install ambiguous@ambiguous-ai
+```
+
+In a running session, run `/reload-plugins`. On claude.ai and in Cowork, add Ambiguous from the
+directory.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
