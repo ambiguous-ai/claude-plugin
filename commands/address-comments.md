@@ -1,5 +1,5 @@
 ---
-description: Go through the comments on one of my documents, presentations, sheets or wiki pages in Ambiguous, make the changes people asked for, and reply to each.
+description: Check whether there are comments waiting on my documents, presentations, sheets or wiki pages in Ambiguous, then work through them — make the changes people asked for and reply to each.
 argument-hint: "the document (name or link); optional 'just reply' or 'just list them'"
 ---
 
