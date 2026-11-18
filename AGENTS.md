@@ -18,7 +18,11 @@ Each kind of guidance has one source:
 
 Edit the operating guide in the workspace repository, never here; the sync copies it unchanged.
 Skills written for Claude Code alone live under `skills/` beside it and may use any Claude Code
-skill field.
+skill field. Commands live in `commands/`, one file each. In claude.ai chat a command loads as a
+skill that Claude applies when its description fits, so write each description as the request a
+person would make, name only tools the Ambiguous connector serves, and keep the shared rules in the
+`ambiguous` skill rather than repeating them. Never give a command and a skill the same name; the
+skill wins and the command disappears.
 
 Keep `version` equal in `plugin.json` and the marketplace entry, and raise it with every change a
 user should receive: an installed plugin stays on its version until the version changes.

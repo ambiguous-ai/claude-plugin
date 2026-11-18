@@ -11,7 +11,7 @@
       "name": "ambiguous",
       "source": "./",
       "description": "Work in an Ambiguous Workspace — docs, sheets, slides, chat, mail, drive, tasks, CRM, forms, calendar and wiki — using MCP or CLI.",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "category": "productivity",
       "tags": [
         "productivity",
